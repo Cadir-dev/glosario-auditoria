@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Glosario de Auditoría Informática</title>
-    <!-- Enlazamos nuestra hoja de estilos -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Enlazamos Google Fonts para una tipografía más elegante -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
-<!-- ... dentro de tu .container ... -->
+<body>
+    <div class="container">
         <header>
             <h1>Glosario de Auditoría y Seguridad Informática</h1>
             <p>Términos clave para tu examen. Selecciona una categoría para filtrar.</p>
         </header>
 
-        <!-- ===== BOTÓN A PÁGINA "SOBRE MÍ" ===== -->
+        <!-- Botón "Sobre mí" -->
         <div class="page-nav">
             <a href="sobre_mi.html" class="nav-button">Conoce más sobre mí →</a>
         </div>
-        <!-- ======================================= -->
 
+        <!-- Navegación por categorías (opcional si se implementa luego con JS) -->
         <nav id="categorias-nav" class="categorias-nav"></nav>
-<!-- ... resto del archivo ... -->
-<body>
 
-
-
+        <!-- Contenido principal -->
         <main class="glosario-layout">
-            <!-- La lista de palabras se generará aquí con JavaScript -->
             <div id="lista-palabras" class="columna-palabras"></div>
-
-            <!-- La definición aparecerá aquí -->
             <div id="definicion-container" class="columna-definicion">
                 <h2>Selecciona un término para ver su definición</h2>
             </div>
         </main>
-    </div>
-<!-- ===== NUEVO FOOTER ===== -->
-    <footer class="site-footer">
-        <p>© 2024 Derechos Reservados - Cadir Alarcon Choque</p>
-    </footer>
-    <!-- ======================== -->
 
-    <!-- Al final, enlazamos nuestro JavaScript -->
+        <!-- Pie de página -->
+        <footer class="site-footer">
+            <p>© 2024 Derechos Reservados - Cadir Alarcon Choque</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
